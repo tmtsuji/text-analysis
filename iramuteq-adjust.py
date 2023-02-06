@@ -5,7 +5,7 @@
 import os
 
 # a variavel path contem o caminho do diretorio
-path = '/home/thays/Documents/Doutorado/udm2022/planos_argentina_eua/frança/teste' 
+path = '' 
 filenames = os.listdir(path)
 
 # esse loop vai criar um arquivo contendo o código e o nome do arquivo 
@@ -26,33 +26,12 @@ delete_list = ["*","#", "%","&", "*", "(",")", "-", "+","=","[", "]", "{","}",
 
     # lista de termos a serem substituidos
     
-replace_list = ["bassin de rétention", "bassins de rétention", "puit d'infiltration",
-                "puits d'infiltration","tranchée d'infiltration","tranchées d'infiltration", 
-                "tranchée dreinante", "tranchées drainantes", "pavés poreux",  
-                "toitures végétalisées", "toitures végétalisées", "toiture végétalisée",
-                "toit végétal", "toiture végétale","bassin d'infiltration", 
-                "bassins d'infiltration", "noue végétalisée", "noues végétalisées",
-                "fossé végétalisée", "fossés végétalisées", "tranchée de rétention",
-                "tranchées de rétention", "tranchée d’infiltration","tranchées d’infiltration",
-                "eaux pluviales", "eau pluviale", "solution compensatoire",
-                "solutions compensatories", "changement climatique", "îlots de chaleur",
-                "îlot de chaleur","massif infiltrant", "tranchée infiltrant",
-                "bassin de détention", "bassins de détention",]
+replace_list = [" "]
 
     # lista dos termos substitutos
        # As ordens dos termos devem ser correspondentes as da replace list
        
-surrogate_list = ["bassin_de_rétention","bassins_de_rétention","puit_d'infiltration",
-                  "puits_d'infiltration","tranchée_d'infiltration","tranchées_d'infiltration",
-                  "tranchée_dreinante","tranchées_drainantes","pavés_poreux",
-                  "toitures_végétalisées","toitures_végétalisées","toiture_végétalisée",
-                  "toit_végétal","toiture_végétale","bassin_d'infiltration",
-                  "bassins_d'infiltration","noue_végétalisée", "noues_végétalisées",
-                  "fossé_végétalisée","fossés_végétalisées","tranchée_de_rétention",
-                  "tranchées_de_rétention","tranchée_d’infiltration","tranchées_d’infiltration",
-                  "eaux_pluviales","eau_pluviale","solution_compensatoire",
-                  "solutions_compensatories","changement_climatique","îlots_de_chaleur",
-                  "îlot_de_chaleur","massif_infiltrant","tranchée_infiltrant"]
+surrogate_list = [" "]
 
 
 # Juntando textos e Escrenvendo o cabecalho requerido pelo Iramuteq
@@ -87,11 +66,11 @@ with open("teste.txt", 'w') as f: #Abre o arquivo txt para escrever
        
 
 #Para ajustar e organizar um arquivo só 
-with open("aesn_fr.txt", 'w') as f: #Abre o arquivo txt para escrever
+with open("newfile.txt", 'w') as f: #Abre o arquivo txt para escrever
     #o nome do arquivo deve ser um novo nome inexistente na pasta
     
         
-        with open("AESN_SDAGE2016seine.txt") as t: #abre os arquivos que estao
+        with open("file.txt") as t: #abre os arquivos que estao
             
             # Ajustando o texto dos documentos antes de inseri-los
 
